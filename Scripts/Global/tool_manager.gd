@@ -7,6 +7,7 @@ extends Node3D
 const mover_scene = preload("uid://lef520va1iuy")
 const rotator_scene = preload("uid://cxp4niroa1yt7")
 const scaler_scene = preload("uid://dpdlgefqmcim3")
+const axis_guide_scene = preload("uid://dgyx4v8xpg2ox")
 
 const sphere_scene = preload("uid://dg02c0iam0d6c")
 const capsule_scene = preload("uid://exrim1xx0qk0")
@@ -19,6 +20,7 @@ const triangle_scene = preload("uid://cqss4msloepti")
 var mover_node: Mover
 var rotator_node: Rotator
 var scaler_node: Scaler
+var axis_guide_node: Node3D
 
 var selected_mover: bool = false
 var selected_rotator: bool = false
@@ -50,6 +52,9 @@ func _ready():
 
 	scaler_node = scaler_scene.instantiate()
 	add_child(scaler_node)
+
+	axis_guide_node = axis_guide_scene.instantiate()
+	add_child(axis_guide_node)
 
 	confirm_modification()
 

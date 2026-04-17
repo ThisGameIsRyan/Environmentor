@@ -65,7 +65,7 @@ func _on_update_object_position(target: StaticBody3D, target_axis: Vector3, firs
 	if Input.is_action_pressed("Coarse"):
 		movement = snapped(movement, 1)
 	if Input.is_action_pressed("Fine"):
-		start_world_position += (last_move_offset - (move_axis * movement)) * 0.5
+		start_world_position += (last_move_offset - (move_axis * movement)) * 0.8
 	
 	last_move_offset = move_axis * movement
 	target.global_position = start_world_position + move_axis * movement

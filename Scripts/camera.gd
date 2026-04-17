@@ -13,6 +13,7 @@ var coarse_scroll_speed: float = 5
 
 func _ready():
 	camera.position = Vector3(pow(zoom_index, 4), 0, 0)
+	SignalManager.zoom_changed.emit(zoom_index, 0, 4)
 	camera.look_at(position)
 	rotate(Vector3(0, 0, 1), deg_to_rad(30))
 

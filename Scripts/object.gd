@@ -1,12 +1,15 @@
 class_name EnvironmentObject extends StaticBody3D
 
 @export var object_type: String = ""
+@export var selectable: bool = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	SignalManager.update_selection.connect(_on_update_selection)
 
 func _on_update_selection(target: StaticBody3D, override_toggle: bool, visibility: bool):
+	if !selectable:
+		return
 	if override_toggle:
 		if target == self:
 			get_node("MeshInstance3D/Outline").visible = visibility

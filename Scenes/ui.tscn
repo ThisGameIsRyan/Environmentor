@@ -402,3 +402,34 @@ grow_vertical = 2
 texture = ExtResource("11_g0wmg")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="ObjectInfoButton" type="Button" parent="Panel" unique_id=1483692644]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -12.0
+offset_top = 4.0
+offset_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset_ratio = Vector2(1, 0)
+expand_icon = true
+
+[node name="Dropdown" type="TextureRect" parent="Panel/ObjectInfoButton" unique_id=1380221026]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.41700003
+anchor_right = 1.3330001
+anchor_bottom = 1.0
+offset_left = 0.00402689
+offset_right = 0.004026413
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5707964
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("11_g0wmg")
+expand_mode = 1
+stretch_mode = 5

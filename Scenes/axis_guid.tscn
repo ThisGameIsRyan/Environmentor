@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dgyx4v8xpg2ox"]
+
+[ext_resource type="ArrayMesh" uid="uid://deespblkvtd50" path="res://Models/Tools/Meshes/line.res" id="1_kt572"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0ive"]
+shading_mode = 0
+albedo_color = Color(0.9607843, 0.23921569, 0.3882353, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kt572"]
+shading_mode = 0
+albedo_color = Color(0.65882355, 0.9137255, 0.019607844, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ja6m"]
+shading_mode = 0
+albedo_color = Color(0.19607843, 0.6627451, 0.9607843, 1)
+
+[node name="AxisGuid" type="Node3D" unique_id=747509166]
+
+[node name="LineX" type="Node3D" parent="." unique_id=743621749]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineX" unique_id=1495653546]
+transparency = 0.5
+cast_shadow = 0
+mesh = ExtResource("1_kt572")
+surface_material_override/0 = SubResource("StandardMaterial3D_g0ive")
+
+[node name="LineY" type="Node3D" parent="." unique_id=605041600]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineY" unique_id=793183056]
+transparency = 0.5
+cast_shadow = 0
+mesh = ExtResource("1_kt572")
+surface_material_override/0 = SubResource("StandardMaterial3D_kt572")
+
+[node name="LineZ" type="Node3D" parent="." unique_id=457489202]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineZ" unique_id=2056355100]
+transparency = 0.5
+cast_shadow = 0
+mesh = ExtResource("1_kt572")
+surface_material_override/0 = SubResource("StandardMaterial3D_5ja6m")
