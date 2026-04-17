@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c0kwudc86mngh"]
+
+[ext_resource type="Script" uid="uid://dftqu3vf03msp" path="res://Scripts/camera.gd" id="2_73fpf"]
+[ext_resource type="PackedScene" uid="uid://d1g3iujd8ss2h" path="res://Scenes/cube.tscn" id="2_mjsji"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_73fpf"]
+
+[sub_resource type="Sky" id="Sky_8tn2x"]
+sky_material = SubResource("ProceduralSkyMaterial_73fpf")
+
+[sub_resource type="Environment" id="Environment_mjsji"]
+background_mode = 1
+sky = SubResource("Sky_8tn2x")
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.1
+
+[node name="BeatSaberMap" type="Node3D" unique_id=57311420]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=22884971]
+environment = SubResource("Environment_mjsji")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1323064395]
+transform = Transform3D(0.89382577, -0.2389891, 0.37942022, -0.2953011, 0.32303715, 0.8991353, -0.33745036, -0.9157135, 0.21816519, 0, 0, 0)
+light_energy = 0.2
+shadow_enabled = true
+
+[node name="PlayerPlatform" parent="." unique_id=1317384480 instance=ExtResource("2_mjsji")]
+transform = Transform3D(2, 0, 0, 0, 20, 0, 0, 0, 3, 0, -10, 0)
+
+[node name="Marker3D" type="Marker3D" parent="." unique_id=64377204]
+script = ExtResource("2_73fpf")
+
+[node name="Camera3D" type="Camera3D" parent="Marker3D" unique_id=399261176]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0, 0)
+near = 0.005
