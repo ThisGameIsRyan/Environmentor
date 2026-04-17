@@ -1,5 +1,6 @@
-extends StaticBody3D
+class_name EnvironmentObject extends StaticBody3D
 
+@export var object_type: String = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

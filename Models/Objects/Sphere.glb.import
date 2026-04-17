@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dn0dabmntlh87"
-path="res://.godot/imported/StickCollider.glb-1aadc682832f88d6e9bda11442f7722c.scn"
+uid="uid://clcko12tmhsb4"
+path="res://.godot/imported/Sphere.glb-f92e2bc7d5fece203bdcfb509c7d1f03.scn"
 
 [deps]
 
-source_file="res://Models/StickCollider.glb"
-dest_files=["res://.godot/imported/StickCollider.glb-1aadc682832f88d6e9bda11442f7722c.scn"]
+source_file="res://Models/Objects/Sphere.glb"
+dest_files=["res://.godot/imported/Sphere.glb-f92e2bc7d5fece203bdcfb509c7d1f03.scn"]
 
 [params]
 
@@ -39,14 +39,14 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "meshes": {
-"StickCollider_Cylinder_001": {
+"Sphere_Icosphere": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Models/Meshes/StickCollider_Cylinder_001.res",
-"save_to_file/path": "uid://dpj2hl2v8cjen"
+"save_to_file/fallback_path": "res://Models/Objects/Meshes/Sphere_Icosphere.res",
+"save_to_file/path": "uid://rbmxvdu28q3"
 }
 }
 }

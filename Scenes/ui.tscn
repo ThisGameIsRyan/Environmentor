@@ -25,6 +25,40 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0wmg"]
+bg_color = Color(0.3106171, 0.31061712, 0.310617, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4vbiv"]
+bg_color = Color(0.3106171, 0.31061712, 0.310617, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.0076186024, 0.0076186024, 0.0076186024, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3r70p"]
+bg_color = Color(0.1488, 0.15346666, 0.16, 1)
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8fs27"]
+content_margin_left = 3.0
+bg_color = Color(0.25565878, 0.2556588, 0.25565875, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [node name="UI" type="Control" unique_id=963188964]
 layout_mode = 3
 anchors_preset = 15
@@ -267,10 +301,75 @@ stretch_mode = 5
 custom_minimum_size = Vector2(60, 40)
 layout_mode = 2
 theme_override_styles/normal = ExtResource("1_q7pk6")
-theme_override_styles/pressed = ExtResource("1_2246s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g0wmg")
 theme_override_styles/hover = ExtResource("2_smcll")
-theme_override_styles/hover_pressed = ExtResource("1_2246s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_4vbiv")
 theme_override_styles/focus = ExtResource("1_2246s")
+toggle_mode = true
+
+[node name="Panel" type="Panel" parent="Panel/HBoxContainer/AddButton" unique_id=1160641061]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.87500006
+anchor_bottom = 0.87500006
+offset_left = 5.0
+offset_right = 83.0
+offset_bottom = 191.0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3r70p")
+
+[node name="BoxContainer" type="VBoxContainer" parent="Panel/HBoxContainer/AddButton/Panel" unique_id=958650575]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 75.0
+offset_bottom = 188.0
+
+[node name="SphereButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=204217083]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Sphere
+"
+alignment = 0
+
+[node name="CapsuleButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=998058965]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Capsule"
+alignment = 0
+
+[node name="CylinderButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=81782457]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Cylinder
+"
+alignment = 0
+
+[node name="CubeButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=1818723074]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Cube"
+alignment = 0
+
+[node name="PlaneButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=2116350918]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Plane"
+alignment = 0
+
+[node name="QuadButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=1668908847]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Quad"
+alignment = 0
+
+[node name="TriangleButton" type="Button" parent="Panel/HBoxContainer/AddButton/Panel/BoxContainer" unique_id=317721471]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fs27")
+text = "Triangle"
+alignment = 0
 
 [node name="TextureRect" type="TextureRect" parent="Panel/HBoxContainer/AddButton" unique_id=2029581417]
 layout_mode = 1

@@ -1,5 +1,5 @@
 shader_type spatial;
-render_mode wireframe,unshaded, depth_test_disabled;
+render_mode wireframe, unshaded, depth_test_disabled, cull_disabled;
 uniform sampler2D depth_texture : hint_depth_texture;
 
 void vertex() {

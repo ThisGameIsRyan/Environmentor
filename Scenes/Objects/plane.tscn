@@ -1,0 +1,40 @@
+[gd_scene format=4 uid="uid://djv1m1ogay5sk"]
+
+[ext_resource type="Script" uid="uid://bgpirl0cwnr55" path="res://Scripts/object.gd" id="1_erh0s"]
+[ext_resource type="ArrayMesh" uid="uid://bjullmmme1fr8" path="res://Models/Objects/Meshes/Plane.res" id="2_fy6fe"]
+[ext_resource type="Shader" uid="uid://cqa78uhjkshel" path="res://Shaders/Selection.gdshader" id="3_t2k46"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_erh0s"]
+points = PackedVector3Array(-5, 0, -5, -5, 0, 5, 5, 0, -5, 5, 0, 5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ec3jx"]
+_surfaces = [{
+"aabb": AABB(-5, 0.01, -5, 10, 1e-05, 10),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAA="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAAABAAMA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AACgwArXIzwAAKBAAACgQArXIzwAAKDAAACgQArXIzwAAKBAAACgwArXIzwAAKDA/3/9//7//7//f/3//v//v/9//f/+//+//3/9//7//78=")
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t2k46"]
+render_priority = 0
+shader = ExtResource("3_t2k46")
+
+[node name="Plane" type="StaticBody3D" unique_id=812948657]
+script = ExtResource("1_erh0s")
+object_type = "plane"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1462637820]
+shape = SubResource("ConvexPolygonShape3D_erh0s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=122244870]
+mesh = ExtResource("2_fy6fe")
+
+[node name="Outline" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1315395002]
+visible = false
+mesh = SubResource("ArrayMesh_ec3jx")
+surface_material_override/0 = SubResource("ShaderMaterial_t2k46")

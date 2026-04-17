@@ -14,7 +14,7 @@ func _ready():
 	SignalManager.update_object_rotation.connect(_on_update_object_rotation)
 	SignalManager.update_tools.connect(_on_update_tools)
 
-# SIGNALS
+# ---------- Signals ----------
 
 func _on_update_object_rotation(target: StaticBody3D, target_axis: Vector3, first: bool):
 	if first:

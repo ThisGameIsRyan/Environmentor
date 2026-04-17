@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bp68ws52i3u05"
-path="res://.godot/imported/Arrow.glb-4d4ea3d7539e8c5c4f2f20850cb42a5f.scn"
+uid="uid://bsvk8is7javdw"
+path="res://.godot/imported/Quad.glb-b331f14f02db842ae73915eb19537849.scn"
 
 [deps]
 
-source_file="res://Models/Arrow.glb"
-dest_files=["res://.godot/imported/Arrow.glb-4d4ea3d7539e8c5c4f2f20850cb42a5f.scn"]
+source_file="res://Models/Objects/Quad.glb"
+dest_files=["res://.godot/imported/Quad.glb-b331f14f02db842ae73915eb19537849.scn"]
 
 [params]
 
@@ -39,14 +39,14 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "meshes": {
-"Arrow_Cylinder": {
+"Quad_Plane": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://Models/Meshes/Arrow.res",
-"save_to_file/path": "uid://b1j3h1fxg0mn"
+"save_to_file/fallback_path": "res://Models/Objects/Meshes/Quad_Plane.res",
+"save_to_file/path": "uid://dejprg6dv0ayw"
 }
 }
 }

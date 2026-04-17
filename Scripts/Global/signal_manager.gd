@@ -3,6 +3,7 @@ extends Node
 signal tool_button_toggled(rotator_toggled_on: bool, mover_toggled_on: bool, scaler_toggled_on: bool)
 signal undo_button_pressed()
 signal redo_button_pressed()
+signal create_object(object_name: String)
 
 # Camera Signals
 signal zoom_changed(zoom: float, delta: float, power: float)

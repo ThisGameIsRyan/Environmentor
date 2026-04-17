@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0kwudc86mngh"]
 
 [ext_resource type="Script" uid="uid://dftqu3vf03msp" path="res://Scripts/camera.gd" id="2_73fpf"]
-[ext_resource type="PackedScene" uid="uid://d1g3iujd8ss2h" path="res://Scenes/cube.tscn" id="2_mjsji"]
+[ext_resource type="PackedScene" uid="uid://d1g3iujd8ss2h" path="res://Scenes/Objects/cube.tscn" id="2_mjsji"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_73fpf"]
 

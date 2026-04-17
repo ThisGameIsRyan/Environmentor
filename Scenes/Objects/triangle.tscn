@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cqss4msloepti"]
+
+[ext_resource type="Script" uid="uid://bgpirl0cwnr55" path="res://Scripts/object.gd" id="1_3rl1d"]
+[ext_resource type="ArrayMesh" uid="uid://c8b0ysyynj7wq" path="res://Models/Objects/Meshes/Triangle.res" id="2_3rl1d"]
+[ext_resource type="Shader" uid="uid://cqa78uhjkshel" path="res://Shaders/Selection.gdshader" id="3_6uwjd"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5y6ha"]
+points = PackedVector3Array(0, -0.5, 0.49999997, 0, -0.5, -0.49999997, 0, 0.5, -9.790063e-05)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ykbc3"]
+_surfaces = [{
+"aabb": AABB(0.01, -0.5, -0.49999997, 1e-05, 1, 0.99999994),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 34359742487,
+"index_count": 3,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 3,
+"vertex_data": PackedByteArray(10, 215, 35, 60, 0, 0, 0, 63, 0, 0, 0, 183, 10, 215, 35, 60, 0, 0, 0, 191, 255, 255, 255, 190, 10, 215, 35, 60, 0, 0, 0, 191, 255, 255, 255, 62, 252, 255, 254, 127, 254, 127, 84, 149, 252, 255, 254, 127, 254, 127, 84, 149, 252, 255, 254, 127, 254, 127, 84, 149)
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u60w7"]
+render_priority = 0
+shader = ExtResource("3_6uwjd")
+
+[node name="Triangle" type="StaticBody3D" unique_id=812948657]
+script = ExtResource("1_3rl1d")
+object_type = "triangle"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2141002274]
+shape = SubResource("ConvexPolygonShape3D_5y6ha")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=122244870]
+mesh = ExtResource("2_3rl1d")
+
+[node name="Outline" type="MeshInstance3D" parent="MeshInstance3D" unique_id=99186870]
+visible = false
+mesh = SubResource("ArrayMesh_ykbc3")
+surface_material_override/0 = SubResource("ShaderMaterial_u60w7")

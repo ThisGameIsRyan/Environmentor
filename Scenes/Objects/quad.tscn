@@ -1,0 +1,40 @@
+[gd_scene format=4 uid="uid://damngxs4t2wn0"]
+
+[ext_resource type="Script" uid="uid://bgpirl0cwnr55" path="res://Scripts/object.gd" id="1_5wvgx"]
+[ext_resource type="ArrayMesh" uid="uid://dejprg6dv0ayw" path="res://Models/Objects/Meshes/Quad.res" id="2_5wvgx"]
+[ext_resource type="Shader" uid="uid://cqa78uhjkshel" path="res://Shaders/Selection.gdshader" id="3_5ba38"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5ba38"]
+points = PackedVector3Array(0, 0.5, 0.49999997, 0, 0.5, -0.49999997, 0, -0.5, 0.49999997, 0, -0.5, -0.49999997)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vufmw"]
+_surfaces = [{
+"aabb": AABB(0.01, -0.5, -0.49999997, 1e-05, 1, 0.99999994),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAA="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAAABAAMA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("CtcjPAAAAD////8+CtcjPAAAAL////++CtcjPAAAAL////8+CtcjPAAAAD////++/v8CgASAAID+/wKABIAAgP7/AoAEgACA/v8CgASAAIA=")
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_psexi"]
+render_priority = 0
+shader = ExtResource("3_5ba38")
+
+[node name="Quad" type="StaticBody3D" unique_id=812948657]
+script = ExtResource("1_5wvgx")
+object_type = "quad"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1979622242]
+shape = SubResource("ConvexPolygonShape3D_5ba38")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=122244870]
+mesh = ExtResource("2_5wvgx")
+
+[node name="Outline" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1840505883]
+visible = false
+mesh = SubResource("ArrayMesh_vufmw")
+surface_material_override/0 = SubResource("ShaderMaterial_psexi")

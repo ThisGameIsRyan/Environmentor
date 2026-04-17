@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c4dacjnuq8oag"]
 
-[ext_resource type="PackedScene" uid="uid://drwnv17fusf2w" path="res://Models/PlayerPlatform.glb" id="1_njov2"]
-[ext_resource type="PackedScene" uid="uid://d1g3iujd8ss2h" path="res://Scenes/cube.tscn" id="2_0dy5s"]
+[ext_resource type="PackedScene" uid="uid://drwnv17fusf2w" path="res://Models/Tools/PlayerPlatform.glb" id="1_njov2"]
+[ext_resource type="PackedScene" uid="uid://d1g3iujd8ss2h" path="res://Scenes/Objects/cube.tscn" id="2_0dy5s"]
 [ext_resource type="Script" uid="uid://dftqu3vf03msp" path="res://Scripts/camera.gd" id="3_2au82"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2au82"]
@@ -22,7 +22,7 @@ environment = SubResource("Environment_aq4fw")
 transform = Transform3D(0.89382577, -0.23898907, 0.3794202, -0.2953011, 0.32303715, 0.89913523, -0.33745036, -0.9157135, 0.21816517, 0, 0, 0)
 shadow_enabled = true
 
-[node name="PlayerPlatform" parent="." unique_id=706458877 instance=ExtResource("1_njov2")]
+[node name="PlayerPlatform" parent="." unique_id=313415098 instance=ExtResource("1_njov2")]
 
 [node name="Cube" parent="." unique_id=1317384480 instance=ExtResource("2_0dy5s")]
 

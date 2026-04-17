@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bhwlepoesan7y" path="res://Scripts/mover.gd" id="1_3fqcw"]
 [ext_resource type="Shader" uid="uid://qple8h6ljpjl" path="res://Shaders/DisplayBehind.gdshader" id="1_gskug"]
-[ext_resource type="ArrayMesh" uid="uid://b1j3h1fxg0mn" path="res://Models/Meshes/Arrow.res" id="1_x5u76"]
+[ext_resource type="ArrayMesh" uid="uid://b1j3h1fxg0mn" path="res://Models/Tools/Meshes/Arrow.res" id="1_x5u76"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x5u76"]
 shading_mode = 0

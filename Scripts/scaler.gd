@@ -9,7 +9,7 @@ func _ready():
 	SignalManager.update_object_scale.connect(_on_update_object_position)
 	SignalManager.update_tools.connect(_on_update_tools)
 
-# Signals
+# ---------- Signals ----------
 
 func _on_update_object_position(target: StaticBody3D, target_axis: Vector3, first: bool):
 	if first:

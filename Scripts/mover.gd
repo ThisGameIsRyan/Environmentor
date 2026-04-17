@@ -44,11 +44,11 @@ func screen_to_world(screen_position: Vector2, target: StaticBody3D) -> Vector3:
 	var world_point = plane.intersects_ray(ray_origin, ray_direction)
 	return world_point if world_point != null else target.global_transform.origin
 
-# SIGNALS
+# ---------- Signals ----------
 
 func _on_update_object_position(target: StaticBody3D, target_axis: Vector3, first: bool):
 	if first:
-		move_axis = target_axis
+		move_axis = target_axis.normalized()
 		screen_point = camera.unproject_position(target.transform.origin)
 		screen_vector = camera.unproject_position((move_axis * 10) + target.transform.origin).direction_to(screen_point)
 		start_intersection_point = intersection_point_2d()

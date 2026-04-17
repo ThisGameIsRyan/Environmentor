@@ -1,18 +1,15 @@
 [gd_scene format=4 uid="uid://d1g3iujd8ss2h"]
 
-[ext_resource type="Script" path="res://Scripts/cube.gd" id="1_dt3qw"]
-[ext_resource type="Shader" uid="uid://cqa78uhjkshel" path="res://Shaders/Selection.gdshader" id="1_m6c8s"]
+[ext_resource type="Script" uid="uid://bgpirl0cwnr55" path="res://Scripts/object.gd" id="1_psj1s"]
+[ext_resource type="ArrayMesh" uid="uid://gpbsspld4lkh" path="res://Models/Objects/Meshes/Cube.res" id="2_h2m0j"]
+[ext_resource type="Shader" uid="uid://cqa78uhjkshel" path="res://Shaders/Selection.gdshader" id="3_hlaix"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_rvu7i"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qs82m"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_rvu7i"]
-material = SubResource("StandardMaterial3D_qs82m")
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_psj1s"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_f2nln"]
 render_priority = 0
-shader = ExtResource("1_m6c8s")
+shader = ExtResource("3_hlaix")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_efk68"]
 _surfaces = [{
@@ -29,13 +26,14 @@ _surfaces = [{
 }]
 
 [node name="Cube" type="StaticBody3D" unique_id=1317384480]
-script = ExtResource("1_dt3qw")
+script = ExtResource("1_psj1s")
+object_type = "cube"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=731569801]
-shape = SubResource("BoxShape3D_rvu7i")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=699503694]
+shape = SubResource("ConvexPolygonShape3D_psj1s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1544700089]
-mesh = SubResource("BoxMesh_rvu7i")
+mesh = ExtResource("2_h2m0j")
 
 [node name="Outline" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1196951937]
 visible = false

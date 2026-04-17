@@ -13,7 +13,17 @@ var selector_button: Button
 var undo_button: Button
 var redo_button: Button
 
-# Called when the node enters the scene tree for the first time.
+# --- Add Button ---
+var add_button: Button
+var add_sphere_button: Button
+var add_capsule_button: Button
+var add_cylinder_button: Button
+var add_cube_button: Button
+var add_plane_button: Button
+var add_quad_button: Button
+var add_triangle_button: Button
+# ------------------
+
 func _ready():
 	size = get_window().size
 	set_anchors_preset(PRESET_FULL_RECT)
@@ -34,6 +44,18 @@ func _ready():
 	undo_button = h_box_container.get_node("UndoButton")
 	redo_button = h_box_container.get_node("RedoButton")
 
+	# --- Add Button ---
+	add_button = h_box_container.get_node("AddButton")
+	var add_button_container = add_button.get_child(0).get_child(0)
+	add_sphere_button = add_button_container.get_node("SphereButton")
+	add_capsule_button = add_button_container.get_node("CapsuleButton")
+	add_cylinder_button = add_button_container.get_node("CylinderButton")
+	add_cube_button = add_button_container.get_node("CubeButton")
+	add_plane_button = add_button_container.get_node("PlaneButton")
+	add_quad_button = add_button_container.get_node("QuadButton")
+	add_triangle_button = add_button_container.get_node("TriangleButton")
+	# ------------------
+
 	movetator_button.toggled.connect(_on_movetator_button_pressed)
 	rotator_button.toggled.connect(_on_rotator_button_pressed)
 	mover_button.toggled.connect(_on_mover_button_pressed)
@@ -42,6 +64,27 @@ func _ready():
 
 	undo_button.pressed.connect(_on_undo_button_pressed)
 	redo_button.pressed.connect(_on_redo_button_pressed)
+
+	# --- Add Button ---
+	add_button.pressed.connect(_on_add_button_pressed)
+	add_sphere_button.pressed.connect(_on_add_sphere_button_pressed)
+	add_capsule_button.pressed.connect(_on_add_capsule_button_pressed)
+	add_cylinder_button.pressed.connect(_on_add_cylinder_button_pressed)
+	add_cube_button.pressed.connect(_on_add_cube_button_pressed)
+	add_plane_button.pressed.connect(_on_add_plane_button_pressed)
+	add_quad_button.pressed.connect(_on_add_quad_button_pressed)
+	add_triangle_button.pressed.connect(_on_add_triangle_button_pressed)
+	# ------------------
+
+func _input(event):
+	if add_button.button_pressed and event is InputEventMouseMotion and get_viewport().gui_get_hovered_control() == null:
+		add_button_panel_toggle(false)
+
+func add_button_panel_toggle(on: bool):
+	add_button.button_pressed = on
+	add_button.get_child(0).visible = on
+
+# ---------- Signals ----------
 
 func _on_movetator_button_pressed(toggled_on: bool):
 	if toggled_on:
@@ -88,3 +131,31 @@ func _on_undo_button_pressed():
 
 func _on_redo_button_pressed():
 	SignalManager.redo_button_pressed.emit()
+
+
+# --- Add Button ---
+func _on_add_button_pressed():
+	add_button.get_child(0).visible = add_button.button_pressed
+
+func _on_add_sphere_button_pressed():
+	SignalManager.create_object.emit("sphere")
+	add_button_panel_toggle(false)
+func _on_add_capsule_button_pressed():
+	SignalManager.create_object.emit("capsule")
+	add_button_panel_toggle(false)
+func _on_add_cylinder_button_pressed():
+	SignalManager.create_object.emit("cylinder")
+	add_button_panel_toggle(false)
+func _on_add_cube_button_pressed():
+	SignalManager.create_object.emit("cube")
+	add_button_panel_toggle(false)
+func _on_add_plane_button_pressed():
+	SignalManager.create_object.emit("plane")
+	add_button_panel_toggle(false)
+func _on_add_quad_button_pressed():
+	SignalManager.create_object.emit("quad")
+	add_button_panel_toggle(false)
+func _on_add_triangle_button_pressed():
+	SignalManager.create_object.emit("triangle")
+	add_button_panel_toggle(false)
+# ------------------
