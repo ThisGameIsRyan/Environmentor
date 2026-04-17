@@ -6,10 +6,17 @@
     xmlns:local="clr-namespace:Environmentor"
     Shell.FlyoutBehavior="Disabled"
     Title="Environmentor">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />   
+        </Tab>
+        <Tab Title="Settings">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+    </TabBar>
 </Shell>

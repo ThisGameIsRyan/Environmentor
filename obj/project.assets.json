@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0-android34.0": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -12,6 +28,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -439,10 +475,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -2209,6 +2292,22 @@
       }
     },
     "net8.0-android34.0/android-arm": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2219,6 +2318,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -2646,10 +2765,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -4416,6 +4582,22 @@
       }
     },
     "net8.0-android34.0/android-arm64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -4426,6 +4608,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -4853,10 +5055,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -6623,6 +6872,22 @@
       }
     },
     "net8.0-android34.0/android-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -6633,6 +6898,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -7060,10 +7345,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -8830,6 +9162,22 @@
       }
     },
     "net8.0-android34.0/android-x86": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -8840,6 +9188,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -9267,10 +9635,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -11037,6 +11452,22 @@
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -11047,6 +11478,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -11474,10 +11925,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -13244,6 +13742,22 @@
       }
     },
     "net8.0-android34.0/maccatalyst-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -13254,6 +13768,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -13681,10 +14215,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -15451,6 +16032,22 @@
       }
     },
     "net8.0-android34.0/win10-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -15461,6 +16058,26 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -15888,10 +16505,57 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Plainer.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Material.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Xamarin.Android.Glide/4.15.1.2": {
@@ -17658,6 +18322,42 @@
       }
     },
     "net8.0-ios18.0": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -18071,14 +18771,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/android-arm": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -18492,14 +19275,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/android-arm64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -18913,14 +19779,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/android-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -19334,14 +20283,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/android-x86": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -19755,14 +20787,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/iossimulator-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -20176,14 +21291,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/maccatalyst-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -20597,14 +21795,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-ios18.0/win10-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21018,14 +22299,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21439,14 +22803,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/android-arm": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21860,14 +23307,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22281,14 +23811,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/android-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22702,14 +24315,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23123,14 +24819,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/iossimulator-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23544,14 +25323,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23965,14 +25827,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-maccatalyst18.0/win10-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -24386,14 +26331,97 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "Microsoft.NET.ILLink.Tasks/8.0.11": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-windows10.0.19041": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -24981,9 +27009,92 @@
             "rid": "win10-x86"
           }
         }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25530,10 +27641,93 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-windows10.0.19041/android-arm64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26080,10 +28274,93 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26630,10 +28907,93 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-windows10.0.19041/android-x86": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -27180,10 +29540,93 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -27730,10 +30173,93 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
         }
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -28281,9 +30807,92 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-windows10.0.19041/win10-x64": {
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -28837,10 +31446,99 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Plainer.Maui/1.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "CommunityToolkit.Mvvm/8.4.0": {
+      "sha512": "tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/8.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.12/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.12/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/CommunityToolkit.Mvvm.FeatureSwitches.targets",
+        "build/CommunityToolkit.Mvvm.SourceGenerators.targets",
+        "build/CommunityToolkit.Mvvm.Windows.targets",
+        "build/CommunityToolkit.Mvvm.WindowsSdk.targets",
+        "build/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/CommunityToolkit.Mvvm.FeatureSwitches.targets",
+        "buildTransitive/CommunityToolkit.Mvvm.SourceGenerators.targets",
+        "buildTransitive/CommunityToolkit.Mvvm.Windows.targets",
+        "buildTransitive/CommunityToolkit.Mvvm.WindowsSdk.targets",
+        "buildTransitive/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.4.0.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll",
+        "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.pdb",
+        "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.xml",
+        "lib/net8.0/CommunityToolkit.Mvvm.dll",
+        "lib/net8.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net8.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
     "GoogleGson/2.10.1.4": {
       "sha512": "L1vdbwbQzvKUoUGiMpMoJG5fqfLXaP6zMy1a26AYJQJSQKUO7Ojr2U5BAmgQoRxQ8J2GDjBfnfgnrsnorb4y5Q==",
       "type": "package",
@@ -28857,6 +31555,40 @@
         "lib/net6.0-android31.0/GoogleGson.aar",
         "lib/net6.0-android31.0/GoogleGson.dll",
         "lib/net6.0-android31.0/GoogleGson.xml"
+      ]
+    },
+    "InputKit.Maui/4.4.7": {
+      "sha512": "nrHIYEVnjJoRKBDEO9Wji8i2bNK3VaZOkWRy8srLXgvASX74SutOC7RuN95MUJqp4uTCCw1E9pNw26gMSKXqZA==",
+      "type": "package",
+      "path": "inputkit.maui/4.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "content/icon512.png",
+        "contentFiles/any/net8.0-android34.0/icon512.png",
+        "contentFiles/any/net8.0-ios17.5/icon512.png",
+        "contentFiles/any/net8.0-maccatalyst17.5/icon512.png",
+        "contentFiles/any/net8.0-windows10.0.19041/icon512.png",
+        "contentFiles/any/net8.0/icon512.png",
+        "icon512.png",
+        "inputkit.maui.4.4.7.nupkg.sha512",
+        "inputkit.maui.nuspec",
+        "lib/net8.0-android34.0/InputKit.Maui.dll",
+        "lib/net8.0-android34.0/InputKit.Maui.pdb",
+        "lib/net8.0-android34.0/InputKit.Maui.xml",
+        "lib/net8.0-ios17.5/InputKit.Maui.dll",
+        "lib/net8.0-ios17.5/InputKit.Maui.pdb",
+        "lib/net8.0-ios17.5/InputKit.Maui.xml",
+        "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll",
+        "lib/net8.0-maccatalyst17.5/InputKit.Maui.pdb",
+        "lib/net8.0-maccatalyst17.5/InputKit.Maui.xml",
+        "lib/net8.0-windows10.0.19041/InputKit.Maui.dll",
+        "lib/net8.0-windows10.0.19041/InputKit.Maui.pdb",
+        "lib/net8.0-windows10.0.19041/InputKit.Maui.xml",
+        "lib/net8.0/InputKit.Maui.dll",
+        "lib/net8.0/InputKit.Maui.pdb",
+        "lib/net8.0/InputKit.Maui.xml"
       ]
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
@@ -30085,10 +32817,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.8": {
-      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
+    "Microsoft.NET.ILLink.Tasks/8.0.11": {
+      "sha512": "zk5lnZrYJgtuJG8L4v17Ej8rZ3PUcR2iweNV08BaO5LbYHIi2wNaVNcJoLxvqgQdnjLlKnCCfVGLDr6QHeAarQ==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.8",
+      "path": "microsoft.net.illink.tasks/8.0.11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -30102,7 +32834,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -30983,6 +33715,123 @@
         "tools/net6.0/System.Text.Json.dll",
         "tools/x64/GenXbf.dll",
         "tools/x86/GenXbf.dll"
+      ]
+    },
+    "Plainer.Maui/1.7.1": {
+      "sha512": "rou+ErJ0l2GkJyMYRKtPiPxEtOGngj7Lv7H5NVACG9baPy3D3tGLO5ma16Usem5/vddu8Ov6bZaXntPMQANXQw==",
+      "type": "package",
+      "path": "plainer.maui/1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0-android34.0/Plainer.Maui.dll",
+        "lib/net8.0-android34.0/Plainer.Maui.pdb",
+        "lib/net8.0-android34.0/Plainer.Maui.xml",
+        "lib/net8.0-ios17.0/Plainer.Maui.dll",
+        "lib/net8.0-ios17.0/Plainer.Maui.pdb",
+        "lib/net8.0-maccatalyst17.0/Plainer.Maui.dll",
+        "lib/net8.0-maccatalyst17.0/Plainer.Maui.pdb",
+        "lib/net8.0-windows10.0.19041/Plainer.Maui.dll",
+        "lib/net8.0-windows10.0.19041/Plainer.Maui.pdb",
+        "lib/net8.0/Plainer.Maui.dll",
+        "lib/net8.0/Plainer.Maui.pdb",
+        "plainer.maui.1.7.1.nupkg.sha512",
+        "plainer.maui.nuspec",
+        "src/Plainer.Maui/Controls/DatePickerView.cs",
+        "src/Plainer.Maui/Controls/EditorView.cs",
+        "src/Plainer.Maui/Controls/EntryView.cs",
+        "src/Plainer.Maui/Controls/PickerView.cs",
+        "src/Plainer.Maui/Controls/TimePickerView.cs",
+        "src/Plainer.Maui/Handlers/DatePickerViewHandler.cs",
+        "src/Plainer.Maui/Handlers/EditorViewHandler.cs",
+        "src/Plainer.Maui/Handlers/EntryViewHandler.cs",
+        "src/Plainer.Maui/Handlers/PickerViewHandler.cs",
+        "src/Plainer.Maui/Handlers/TimePickerViewHandler.cs",
+        "src/Plainer.Maui/MauiHandlerCollectionExtensions.cs",
+        "src/Plainer.Maui/Plainer.Maui.csproj",
+        "src/Plainer.Maui/Platforms/Android/PlatformClass1.cs",
+        "src/Plainer.Maui/Platforms/MacCatalyst/PlatformClass1.cs",
+        "src/Plainer.Maui/Platforms/Windows/PlatformClass1.cs",
+        "src/Plainer.Maui/Platforms/iOS/PlatformClass1.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-android/Plainer.Maui.GlobalUsings.g.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-android/__Microsoft.Android.Resource.Designer.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-ios/Plainer.Maui.GlobalUsings.g.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-ios/Plainer.Maui.nfloat.g.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-maccatalyst/Plainer.Maui.GlobalUsings.g.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-maccatalyst/Plainer.Maui.nfloat.g.cs",
+        "src/Plainer.Maui/obj/Release/net8.0-windows10.0.19041.0/Plainer.Maui.GlobalUsings.g.cs",
+        "src/Plainer.Maui/obj/Release/net8.0/Plainer.Maui.GlobalUsings.g.cs"
+      ]
+    },
+    "UraniumUI/2.11.0": {
+      "sha512": "q3luVI96S1CHPptw2xr+U6g4gR5BW1b8pk0Jaap5A9RmNrXfCiorQE1IcHq0S7QqOXFQZdeC7iy7rYwi2xqudw==",
+      "type": "package",
+      "path": "uraniumui/2.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0-android34.0/UraniumUI.dll",
+        "lib/net8.0-android34.0/UraniumUI.pdb",
+        "lib/net8.0-android34.0/UraniumUI.xml",
+        "lib/net8.0-ios18.0/UraniumUI.dll",
+        "lib/net8.0-ios18.0/UraniumUI.pdb",
+        "lib/net8.0-maccatalyst18.0/UraniumUI.dll",
+        "lib/net8.0-maccatalyst18.0/UraniumUI.pdb",
+        "lib/net8.0-windows10.0.19041/UraniumUI.dll",
+        "lib/net8.0-windows10.0.19041/UraniumUI.pdb",
+        "lib/net8.0/UraniumUI.dll",
+        "lib/net8.0/UraniumUI.pdb",
+        "lib/net9.0-android35.0/UraniumUI.dll",
+        "lib/net9.0-android35.0/UraniumUI.pdb",
+        "lib/net9.0-android35.0/UraniumUI.xml",
+        "lib/net9.0-ios18.0/UraniumUI.dll",
+        "lib/net9.0-ios18.0/UraniumUI.pdb",
+        "lib/net9.0-maccatalyst18.0/UraniumUI.dll",
+        "lib/net9.0-maccatalyst18.0/UraniumUI.pdb",
+        "lib/net9.0-windows10.0.19041/UraniumUI.dll",
+        "lib/net9.0-windows10.0.19041/UraniumUI.pdb",
+        "lib/net9.0/UraniumUI.dll",
+        "lib/net9.0/UraniumUI.pdb",
+        "logo_128.png",
+        "uraniumui.2.11.0.nupkg.sha512",
+        "uraniumui.nuspec"
+      ]
+    },
+    "UraniumUI.Material/2.11.0": {
+      "sha512": "goNIfNh5ayYr+Pa3xF4blCHFth5Si6/S2v/3HJ8NErJFs60gHlsLc8u+yLX76bS3w9DsIXwUAn8pOCZ1L9LS3g==",
+      "type": "package",
+      "path": "uraniumui.material/2.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0-android34.0/UraniumUI.Material.dll",
+        "lib/net8.0-android34.0/UraniumUI.Material.pdb",
+        "lib/net8.0-android34.0/UraniumUI.Material.xml",
+        "lib/net8.0-ios18.0/UraniumUI.Material.dll",
+        "lib/net8.0-ios18.0/UraniumUI.Material.pdb",
+        "lib/net8.0-maccatalyst18.0/UraniumUI.Material.dll",
+        "lib/net8.0-maccatalyst18.0/UraniumUI.Material.pdb",
+        "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll",
+        "lib/net8.0-windows10.0.19041/UraniumUI.Material.pdb",
+        "lib/net8.0/UraniumUI.Material.dll",
+        "lib/net8.0/UraniumUI.Material.pdb",
+        "lib/net9.0-android35.0/UraniumUI.Material.dll",
+        "lib/net9.0-android35.0/UraniumUI.Material.pdb",
+        "lib/net9.0-android35.0/UraniumUI.Material.xml",
+        "lib/net9.0-ios18.0/UraniumUI.Material.dll",
+        "lib/net9.0-ios18.0/UraniumUI.Material.pdb",
+        "lib/net9.0-maccatalyst18.0/UraniumUI.Material.dll",
+        "lib/net9.0-maccatalyst18.0/UraniumUI.Material.pdb",
+        "lib/net9.0-windows10.0.19041/UraniumUI.Material.dll",
+        "lib/net9.0-windows10.0.19041/UraniumUI.Material.pdb",
+        "lib/net9.0/UraniumUI.Material.dll",
+        "lib/net9.0/UraniumUI.Material.pdb",
+        "logo_128.png",
+        "uraniumui.material.2.11.0.nupkg.sha512",
+        "uraniumui.material.nuspec"
       ]
     },
     "Xamarin.Android.Glide/4.15.1.2": {
@@ -33025,27 +35874,35 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
+      "CommunityToolkit.Mvvm >= 8.4.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.11",
+      "UraniumUI.Material >= 2.11.0"
     ],
     "net8.0-ios18.0": [
+      "CommunityToolkit.Mvvm >= 8.4.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.11",
+      "UraniumUI.Material >= 2.11.0"
     ],
     "net8.0-maccatalyst18.0": [
+      "CommunityToolkit.Mvvm >= 8.4.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.11",
+      "UraniumUI.Material >= 2.11.0"
     ],
     "net8.0-windows10.0.19041": [
+      "CommunityToolkit.Mvvm >= 8.4.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
-      "Microsoft.Maui.Controls.Compatibility >= 8.0.83"
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
+      "UraniumUI.Material >= 2.11.0"
     ]
   },
   "packageFolders": {
@@ -33108,12 +35965,17 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0-android34.0": {
         "targetAlias": "net8.0-android",
         "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.4.0, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.1, )"
@@ -33129,132 +35991,12 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.8, )",
+            "version": "[8.0.11, )",
             "autoReferenced": true
-          }
-        },
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48",
-          "net481"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.Android": {
-            "privateAssets": "all"
           },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-      },
-      "net8.0-ios18.0": {
-        "targetAlias": "net8.0-ios",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Debug": {
+          "UraniumUI.Material": {
             "target": "Package",
-            "version": "[8.0.1, )"
-          },
-          "Microsoft.Maui.Controls": {
-            "target": "Package",
-            "version": "[8.0.83, )"
-          },
-          "Microsoft.Maui.Controls.Compatibility": {
-            "target": "Package",
-            "version": "[8.0.83, )"
-          },
-          "Microsoft.NET.ILLink.Tasks": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[8.0.8, )",
-            "autoReferenced": true
-          }
-        },
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48",
-          "net481"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.iOS": {
-            "privateAssets": "all"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-      },
-      "net8.0-maccatalyst18.0": {
-        "targetAlias": "net8.0-maccatalyst",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Debug": {
-            "target": "Package",
-            "version": "[8.0.1, )"
-          },
-          "Microsoft.Maui.Controls": {
-            "target": "Package",
-            "version": "[8.0.83, )"
-          },
-          "Microsoft.Maui.Controls.Compatibility": {
-            "target": "Package",
-            "version": "[8.0.83, )"
-          },
-          "Microsoft.NET.ILLink.Tasks": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[8.0.8, )",
-            "autoReferenced": true
-          }
-        },
-        "imports": [
-          "xamarinios10",
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48",
-          "net481"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.MacCatalyst": {
-            "privateAssets": "all"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-      },
-      "net8.0-windows10.0.19041": {
-        "targetAlias": "net8.0-windows10.0.19041.0",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Debug": {
-            "target": "Package",
-            "version": "[8.0.1, )"
-          },
-          "Microsoft.Maui.Controls": {
-            "target": "Package",
-            "version": "[8.0.83, )"
-          },
-          "Microsoft.Maui.Controls.Compatibility": {
-            "target": "Package",
-            "version": "[8.0.83, )"
+            "version": "[2.11.0, )"
           }
         },
         "imports": [
@@ -33270,19 +36012,225 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.Android": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-ios18.0": {
+        "targetAlias": "net8.0-ios",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.4.0, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.83, )"
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.11, )",
+            "autoReferenced": true
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.11.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.iOS": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-maccatalyst18.0": {
+        "targetAlias": "net8.0-maccatalyst",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.4.0, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.83, )"
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.11, )",
+            "autoReferenced": true
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.11.0, )"
+          }
+        },
+        "imports": [
+          "xamarinios10",
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.MacCatalyst": {
+            "privateAssets": "all"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      },
+      "net8.0-windows10.0.19041": {
+        "targetAlias": "net8.0-windows10.0.19041.0",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.4.0, )"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Compatibility": {
+            "target": "Package",
+            "version": "[8.0.83, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.11.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.19041.34, 10.0.19041.34]"
+            "version": "[10.0.19041.54, 10.0.19041.54]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
           }
         ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.Windows.SDK.NET.Ref": {
+          "Microsoft.Windows.SDK.NET.Ref.Windows": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

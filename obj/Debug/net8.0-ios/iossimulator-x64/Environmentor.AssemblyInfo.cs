@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Environmentor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+208c148da16f267441d5ff949d0d11648a08acab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Environmentor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Environmentor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

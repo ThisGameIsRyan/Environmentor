@@ -9,24 +9,42 @@
     ".NETCoreApp,Version=v8.0/win10-x64": {
       "Environmentor/1.0": {
         "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
           "Microsoft.Extensions.Logging.Debug": "8.0.1",
           "Microsoft.Maui.Controls": "8.0.83",
           "Microsoft.Maui.Controls.Compatibility": "8.0.83",
-          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.34"
+          "UraniumUI.Material": "2.11.0",
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.54"
         },
         "runtime": {
           "Environmentor.dll": {}
         }
       },
-      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.34": {
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.54": {
         "runtime": {
           "Microsoft.Windows.SDK.NET.dll": {
-            "assemblyVersion": "10.0.19041.24",
-            "fileVersion": "10.0.19041.34"
+            "assemblyVersion": "10.0.19041.38",
+            "fileVersion": "10.0.19041.52"
           },
           "WinRT.Runtime.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.8.46841"
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.6.47881"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.1"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "assemblyVersion": "4.4.7.0",
+            "fileVersion": "4.4.7.0"
           }
         }
       },
@@ -444,6 +462,38 @@
             "fileVersion": "1.5.0.0"
           }
         }
+      },
+      "Plainer.Maui/1.7.1": {
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "UraniumUI/2.11.0": {
+        "dependencies": {
+          "InputKit.Maui": "4.4.7",
+          "Microsoft.Maui.Controls": "8.0.83",
+          "Plainer.Maui": "1.7.1"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "assemblyVersion": "2.11.0.0",
+            "fileVersion": "2.11.0.0"
+          }
+        }
+      },
+      "UraniumUI.Material/2.11.0": {
+        "dependencies": {
+          "UraniumUI": "2.11.0"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "assemblyVersion": "2.11.0.0",
+            "fileVersion": "2.11.0.0"
+          }
+        }
       }
     }
   },
@@ -453,10 +503,24 @@
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.34": {
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.54": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommunityToolkit.Mvvm/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
+      "path": "communitytoolkit.mvvm/8.4.0",
+      "hashPath": "communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+    },
+    "InputKit.Maui/4.4.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nrHIYEVnjJoRKBDEO9Wji8i2bNK3VaZOkWRy8srLXgvASX74SutOC7RuN95MUJqp4uTCCw1E9pNw26gMSKXqZA==",
+      "path": "inputkit.maui/4.4.7",
+      "hashPath": "inputkit.maui.4.4.7.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",
@@ -618,6 +682,27 @@
       "sha512": "sha512-qzzWG8rxZyzKzBuUdwr4ApezMINf+NT2b8EiEE5fchczNJJmDwlHImMWxX1pHK1W8Yby99alqLyC8DB0fIrhuA==",
       "path": "microsoft.windowsappsdk/1.5.240627000",
       "hashPath": "microsoft.windowsappsdk.1.5.240627000.nupkg.sha512"
+    },
+    "Plainer.Maui/1.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rou+ErJ0l2GkJyMYRKtPiPxEtOGngj7Lv7H5NVACG9baPy3D3tGLO5ma16Usem5/vddu8Ov6bZaXntPMQANXQw==",
+      "path": "plainer.maui/1.7.1",
+      "hashPath": "plainer.maui.1.7.1.nupkg.sha512"
+    },
+    "UraniumUI/2.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q3luVI96S1CHPptw2xr+U6g4gR5BW1b8pk0Jaap5A9RmNrXfCiorQE1IcHq0S7QqOXFQZdeC7iy7rYwi2xqudw==",
+      "path": "uraniumui/2.11.0",
+      "hashPath": "uraniumui.2.11.0.nupkg.sha512"
+    },
+    "UraniumUI.Material/2.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-goNIfNh5ayYr+Pa3xF4blCHFth5Si6/S2v/3HJ8NErJFs60gHlsLc8u+yLX76bS3w9DsIXwUAn8pOCZ1L9LS3g==",
+      "path": "uraniumui.material/2.11.0",
+      "hashPath": "uraniumui.material.2.11.0.nupkg.sha512"
     }
   }
 }

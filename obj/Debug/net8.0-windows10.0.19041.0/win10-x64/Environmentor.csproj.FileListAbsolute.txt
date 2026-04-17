@@ -461,3 +461,8 @@ C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\obj\Debug\net8.0-
 C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\InputKit.Maui.dll
+C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Plainer.Maui.dll
+C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UraniumUI.dll
+C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UraniumUI.Material.dll
+C:\Users\Ryan\Desktop\CodeProjects\Environmentor\Environmentor\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
